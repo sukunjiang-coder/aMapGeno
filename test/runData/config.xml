@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<case>
+	<positionCount>0</positionCount>
+	<populations>
+		<population id="aswSample">
+			<type>sample</type>
+			<ordinal>-</ordinal>
+			<fileName>aswSample.txt</fileName>
+		</population>
+		<population id="YRI">
+			<type>reference</type>
+			<ordinal>1</ordinal>
+			<fileName>YRI.txt</fileName>
+		</population>
+		<population id="CEU">
+			<type>reference</type>
+			<ordinal>2</ordinal>
+			<fileName>CEU.txt</fileName>
+		</population>
+		<population id="CHS">
+			<type>reference</type>
+			<ordinal>3</ordinal>
+			<fileName>CHS.txt</fileName>
+		</population>
+	</populations>
+	<outputDir>out</outputDir>
+	<minWinSize>160</minWinSize>
+	<winStep>80</winStep>
+	<maxWinSize>1600</maxWinSize>
+</case>
