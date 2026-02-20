@@ -30,10 +30,7 @@ Commercial use includes, but is not limited to:
 - Integration into commercial software products
 - Any activity generating revenue
 
-For commercial licensing inquiries, please contact:
-
-Sukun Jiang  
-Email: [your_email_here]
+For commercial licensing inquiries, please contact: Sukun Jiang  
 
 ---
 
