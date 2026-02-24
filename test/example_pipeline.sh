@@ -14,6 +14,7 @@ set -e
 #   - Java (>= 8)
 #   - aMapGeno.jar
 #   - AncestryView (for visualization only)
+#   - aMapGenoPhase.jar (for phasing)
 ###############################################################################
 
 
@@ -24,9 +25,9 @@ set -e
 # Each reference file may contain multiple individuals and must represent
 # haplotypes (e.g., derived from statistical or pedigree-based phasing).
 
-python to_hap.py -i vcfData/YRI.vcf.gz -o runData/YRI.txt
-python to_hap.py -i vcfData/CEU.vcf.gz -o runData/CEU.txt
-python to_hap.py -i vcfData/CHS.vcf.gz -o runData/CHS.txt
+python to_hap.py -i vcfData/ref1.vcf.gz -o runData/ref1.txt
+python to_hap.py -i vcfData/ref2.vcf.gz -o runData/ref2.txt
+python to_hap.py -i vcfData/ref3.vcf.gz -o runData/ref3.txt
 
 
 ############################
@@ -35,7 +36,7 @@ python to_hap.py -i vcfData/CHS.vcf.gz -o runData/CHS.txt
 # Convert a single sample VCF file into aMapGeno input format.
 # The sample genotype must be UNPHASED.
 
-sampleName=NA19924
+sampleName=sample1
 python to_hap.py -i vcfData/${sampleName}.vcf.gz -o runData/aswSample.txt
 
 
@@ -64,7 +65,7 @@ java -cp ../../AncestryView/loca-v-2.13_1.4.0.jar \
   -pcn POS \
   -colour 1:00DD00:YRI,2:FF0000:CEU,3:0000EE:CHS,o:FFFF00:other \
   -chrinfo chr22:out_final.loca:1:50807702:::${sampleName}_result.png \
-  -person ${sampleName}
+  -person s1
 
 echo "Pipeline completed successfully."
 
