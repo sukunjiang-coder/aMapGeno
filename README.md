@@ -155,7 +155,7 @@ Sample and reference files share the same tab-delimited format.
 Example:
 
 ```
-rsID    position    NA17970_A   NA17970_B
+rsID    position    S1_A   S1_B
 rs10458597  554484  A   A
 rs2185539   556738  C   C
 rs11240767  718814  C   C
@@ -175,7 +175,7 @@ Output files preserve variant positions and replace nucleotide alleles with infe
 Example output:
 
 ```
-rsID    position    NA17970_A   NA17970_B
+rsID    position    S1_A   S1_B
 rs10458597  554484  1   1
 rs2185539   556738  1   1
 rs11240767  718814  1   1
