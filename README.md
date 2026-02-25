@@ -206,7 +206,7 @@ No additional command-line options are required.
 ### Example Output (aMapGenoPhase)
 
 ```
-ID        POS        NA19924   SegmentID   FinalScore
+ID        POS        S1   SegmentID   FinalScore
 .         36621906   A/G       0           .
 .         36621935   T/T       0           .
 .         36622787   C/C       0           .
@@ -223,7 +223,7 @@ ID        POS        NA19924   SegmentID   FinalScore
 
 **Column description**
 
-- **Genotype column (e.g., `NA19924`)**  
+- **Genotype column (e.g., `S1`)**  
   Alleles are represented using either `/` or `|`.  
   `/` indicates unphased genotypes, while `|` indicates phased haplotypes.  
   For phased records, the left and right alleles correspond to the ancestry
